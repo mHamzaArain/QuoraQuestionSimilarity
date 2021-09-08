@@ -58,10 +58,6 @@ Train.csv contains 5 columns : qid1, qid2, question1, question2, is_duplicate. T
   - <b>Euclidean distance</b>
   - <b>Minkowski distance</b>
 ### Some Features analysis and visualizations:
-- ##### word_share - We can check from below that it is overlaping a bit, but it is giving some classifiable score for disimilar questions.
-   ![Wordshare](https://github.com/UdiBhaskar/Quora-Question-pair-similarity/blob/master/Images/output_51_0.png "Wordshare")
-- ##### Word Common - it is almost overlaping.
-   ![Word common](https://github.com/UdiBhaskar/Quora-Question-pair-similarity/blob/master/Images/output_54_0.png "Word common")
 - ##### Bivariate analysis of features 'ctc_min', 'cwc_min', 'csc_min', 'token_sort_ratio'. We can observe that we can divide duplicate and non duplicate with some of these features with some patterns. 
    ![Pair plot](https://github.com/UdiBhaskar/Quora-Question-pair-similarity/blob/master/Images/output_75_0.png "Pair plot")
 - ##### Bivariate analysis of features 'Word_Mover_Dist', 'dist_cosine', 'dist_cityblock', 'dist_canberra','dist_euclidean'.This also giving some patterns to classify.
@@ -73,15 +69,7 @@ Train.csv contains 5 columns : qid1, qid2, question1, question2, is_duplicate. T
 
 | Model         | Features Used | Log Loss |
 | ------------- | ------------- | ------------- |
-| Logistic Regression  | BF + AF  | 0.4003415  |
-| Linear SVM           | BF + AF  | 0.4036245  |
-| Random Forest  | BF + AF  | 0.4143914  |
-| XGBoost  | BF + AF  | 0.362546  |
-| Logistic Regression  | BF + AF + Tf-Idf  | 0.358445  |
-| Linear SVM  | BF + AF + Tf-Idf  | 0.362049  |
-| Logistic Regression  | BF + AF + DF + AVG-W2V  | 0.3882535  |
-| Linear SVM  |  BF + AF + DF + AVG-W2V  | 0.394458  |
-| XGBoost  | BF + AF + DF + AVG-W2V  | 0.313341  |
+| XGBoost  | BF + AF  | 7.828846620662253  |
 
 ##### References:
 1. https://www.kaggle.com/c/quora-question-pairs 
