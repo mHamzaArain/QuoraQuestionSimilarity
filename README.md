@@ -21,19 +21,6 @@ Identify which questions asked on Quora are duplicates of questions that have al
 ### Data Overview:
 Train.csv contains 5 columns : qid1, qid2, question1, question2, is_duplicate. Total we have 404290 entries. Splitted data into train and test with 70% and 30%.
 
-i derived some features from questions like no of common words, word share and some distances between questions with the help of word vectors. will discuss those below. You can check my total work [here](https://github.com/UdiBhaskar/Quora-Question-pair-similarity/blob/master/Quora%20Question%20pair%20similarity.ipynb)
-### Some Analysis:
-- ##### Distribution of data points among output classes  
-   ![No of Datapoints per Class](https://github.com/UdiBhaskar/Quora-Question-pair-similarity/blob/master/Images/output_30_1.png "No of Datapoints per Class") 
-- ##### Number of unique questions
-   ![Number of unique questions](https://github.com/UdiBhaskar/Quora-Question-pair-similarity/blob/master/Images/output_35_0.png "Number of unique questions") 
-- ##### Number of occurrences of each question
-   ![Number of occurrences of each question](https://github.com/UdiBhaskar/Quora-Question-pair-similarity/blob/master/Images/output_39_1.png "Number of occurrences of each question")
-- ##### There is no duplicate pairs. Have 2 Null values, which are filled with space.
-- ##### Wordcloud for similar questions
-   ![Wordcloud for similar questions](https://github.com/UdiBhaskar/Quora-Question-pair-similarity/blob/master/Images/output_71_1.png "Wordcloud for similar questions")
-- ##### Wordcloud for dissimilar questions
-   ![Wordcloud for dissimilar questions](https://github.com/UdiBhaskar/Quora-Question-pair-similarity/blob/master/Images/output_73_1.png "Wordcloud for similar questions")
 ### Feature Extraction:
 - ##### Basic Features - Extracted some features before cleaning of data as below.
   - <b>freq_qid1</b> = Frequency of qid1's
