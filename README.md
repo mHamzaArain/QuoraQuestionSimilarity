@@ -69,7 +69,7 @@ Train.csv contains 5 columns : qid1, qid2, question1, question2, is_duplicate. T
 
 | Model         | Features Used | Log Loss |
 | ------------- | ------------- | ------------- |
-| XGBoost  | BF + AF  | 7.828846620662253  |
+| XGBoost  | BF + AF + dist. F  | 7.828846620662253  |
 
 ##### References:
 1. https://www.kaggle.com/c/quora-question-pairs 
